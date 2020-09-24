@@ -37,7 +37,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   s.ios.public_header_files = 'DJIWidget/**/*.{h}'
   s.ios.vendored_frameworks = 'FFmpeg/FFmpeg.framework'
 # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/DJIWidget/FFmpeg/FFmpeg.framework/Headers" "$(PODS_ROOT)/Headers/Public/DJIWidget/FFmpeg/.."/**', 'OTHER_LDFLAGS' => '"$(inherited)" -framework "FFmpeg"', 'VALID_ARCHS' => 'arm64 x86_64'}  
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/DJIWidget/FFmpeg/FFmpeg.framework/Headers" "$(PODS_ROOT)/Headers/Public/DJIWidget/FFmpeg/.."/**', 'OTHER_LDFLAGS' => '"$(inherited)" -framework "FFmpeg"', 'EXCLUDED_ARCHS' => 'i386', 'ONLY_ACTIVE_ARCH' => 'YES' }
+# s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/DJIWidget/FFmpeg/FFmpeg.framework/Headers" "$(PODS_ROOT)/Headers/Public/DJIWidget/FFmpeg/.."/**', 'OTHER_LDFLAGS' => '"$(inherited)" -framework "FFmpeg"', 'EXCLUDED_ARCHS' => 'i386', 'ONLY_ACTIVE_ARCH' => 'YES' }
+  s.xcconfig = { 'EXCLUDED_ARCHS' => 'i386', 'ONLY_ACTIVE_ARCH' => 'YES' }
   s.pod_target_xcconfig = {'ENABLE_BITCODE' => 'NO'}
 
 end
