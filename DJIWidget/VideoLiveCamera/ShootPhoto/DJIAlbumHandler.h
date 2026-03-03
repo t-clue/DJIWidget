@@ -3,7 +3,6 @@
 //
 //  Copyright (c) 2017 DJI. All rights reserved.
 //
-#import <AssetsLibrary/AssetsLibrary.h>
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
 
