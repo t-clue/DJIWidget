@@ -243,6 +243,7 @@
 		14D89BEB1FC94B0800EE38DF /* djiffremux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = djiffremux.h; sourceTree = "<group>"; };
 		14D89BEC1FC94B0800EE38DF /* DJIVideoPoolMp4Muxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIVideoPoolMp4Muxer.h; sourceTree = "<group>"; };
 		14D89BED1FC94B0900EE38DF /* djiffremux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = djiffremux.c; sourceTree = "<group>"; };
+		4CB06B682F57C6D200C23E78 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		2E54A2CD1F4A904000916B4D /* DJIWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJIWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E54A2D01F4A904000916B4D /* DJIWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJIWidget.h; sourceTree = "<group>"; };
 		2E54A2D11F4A904000916B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -491,6 +492,7 @@
 		2E54A2C31F4A904000916B4D = {
 			isa = PBXGroup;
 			children = (
+				4CB06B682F57C6D200C23E78 /* Base.xcconfig */,
 				2E54A2CF1F4A904000916B4D /* DJIWidget */,
 				2E54A2CE1F4A904000916B4D /* Products */,
 				2E54A79A1F4C2F0D00916B4D /* Frameworks */,
@@ -1190,6 +1192,7 @@
 		};
 		2E54A2D61F4A904000916B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB06B682F57C6D200C23E78 /* Base.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1202,7 +1205,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framewroks",
@@ -1236,6 +1238,7 @@
 		};
 		2E54A2D71F4A904000916B4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB06B682F57C6D200C23E78 /* Base.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1248,7 +1251,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framewroks",
@@ -1337,6 +1339,7 @@
 		};
 		2E8AB2E61FB1B3E0008E33F5 /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB06B682F57C6D200C23E78 /* Base.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1349,7 +1352,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framewroks",
@@ -1438,6 +1440,7 @@
 		};
 		4CB06B652F57C6CF00C23E77 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB06B682F57C6D200C23E78 /* Base.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1450,7 +1453,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = armv7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framewroks",
