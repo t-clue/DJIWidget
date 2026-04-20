@@ -23,11 +23,17 @@ WORK_DIR="$(mktemp -d)"
 trap 'rm -rf "${WORK_DIR}"' EXIT
 
 read_ios_min_sdk_from_binary() {
+  # Returns "<minos> <sdk>" parsed from the Mach-O load command.
+  # Handles both LC_VERSION_MIN_IPHONEOS (older) and LC_BUILD_VERSION platform 2 = IOS (newer toolchains).
   local binary="$1"
   xcrun vtool -show "${binary}" | awk '
-    $0 ~ /LC_VERSION_MIN_IPHONEOS/ { want=1; next }
-    want && $1=="version" { min=$2; want=2; next }
-    want==2 && $1=="sdk" { sdk=$2; print min " " sdk; exit }
+    $0 ~ /LC_VERSION_MIN_IPHONEOS/ { ctx="vmin"; next }
+    ctx=="vmin" && $1=="version" { min=$2; next }
+    ctx=="vmin" && $1=="sdk" { print min " " $2; exit }
+    $0 ~ /LC_BUILD_VERSION/ { ctx="bv"; platform=""; next }
+    ctx=="bv" && ($1=="platform" || $1 ~ /^platform:$/) { platform=$2; next }
+    ctx=="bv" && $1=="minos" { min=$2; next }
+    ctx=="bv" && $1=="sdk" && (platform=="2" || platform=="IOS" || platform=="ios") { print min " " $2; exit }
   '
 }
 
