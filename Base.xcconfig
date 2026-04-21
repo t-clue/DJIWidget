@@ -1,3 +1,5 @@
 // DJIWidget native target — shared build flags.
-// Bundled FFmpeg.xcframework includes ios-arm64_x86_64-simulator (Issue #4805).
+// Bundled FFmpeg (FFmpeg.xcframework) provides iOS device arm64 and iOS Simulator x86_64 only;
+// there is no arm64 slice for iOS Simulator, so simulator builds must not target arm64.
 EXCLUDED_ARCHS[sdk=iphoneos*] = armv7
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
