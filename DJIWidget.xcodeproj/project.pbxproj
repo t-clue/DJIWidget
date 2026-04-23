@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,7 +62,6 @@
 		144D401E1FC3CF510027EF5D /* DJIRtmpIFrameProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 144D40161FC3CF510027EF5D /* DJIRtmpIFrameProvider.m */; };
 		144F340620FD936C005E4662 /* DJICustomVideoFrameExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 144F340420FD936C005E4662 /* DJICustomVideoFrameExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		144F340720FD936C005E4662 /* DJICustomVideoFrameExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 144F340520FD936C005E4662 /* DJICustomVideoFrameExtractor.m */; };
-		1481D4562109DCC200609F3E /* FFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1481D4552109DCC200609F3E /* FFmpeg.framework */; };
 		1490AB56210F442600D8CF3C /* DJISmoothDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E54A2E41F4A906C00916B4D /* DJISmoothDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C170ED1FC4745C0051DA97 /* DJIWidgetAsyncCommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C170E91FC4745B0051DA97 /* DJIWidgetAsyncCommandQueue.h */; };
 		14C170EE1FC4745C0051DA97 /* DJIWidgetLinkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C170EA1FC4745B0051DA97 /* DJIWidgetLinkQueue.m */; };
@@ -169,6 +168,7 @@
 		D7F5DFD2200732DD00C3185E /* DJIImageCalibrationFrameQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F5DFD1200732DD00C3185E /* DJIImageCalibrationFrameQueue.m */; };
 		D7F5DFDE2008517B00C3185E /* DJIImageCacheQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F5DFDD2008517900C3185E /* DJIImageCacheQueue.m */; };
 		D7F699F7201863DD0023C693 /* DJIImageCalibrateColorConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F699F6201863DD0023C693 /* DJIImageCalibrateColorConverter.m */; };
+		FE781EF72F9A1CB500F033FB /* FFmpeg.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE781EF62F9A1CB500F033FB /* FFmpeg.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,7 +243,6 @@
 		14D89BEB1FC94B0800EE38DF /* djiffremux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = djiffremux.h; sourceTree = "<group>"; };
 		14D89BEC1FC94B0800EE38DF /* DJIVideoPoolMp4Muxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIVideoPoolMp4Muxer.h; sourceTree = "<group>"; };
 		14D89BED1FC94B0900EE38DF /* djiffremux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = djiffremux.c; sourceTree = "<group>"; };
-		4CB06B682F57C6D200C23E78 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		2E54A2CD1F4A904000916B4D /* DJIWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJIWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E54A2D01F4A904000916B4D /* DJIWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJIWidget.h; sourceTree = "<group>"; };
 		2E54A2D11F4A904000916B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -314,6 +313,7 @@
 		2E54A7A31F4C364800916B4D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2E54A7A91F4C537300916B4D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2EBAA9C81FB064BE00E26B31 /* DJIWidgetPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIWidgetPrefix.pch; sourceTree = "<group>"; };
+		4CB06B682F57C6D200C23E78 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		9C7E332D2111D7D700A2D60E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE818BDC20F8CD5800DE4B4D /* DJIMavic2ProCameraImageCalibrateFilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIMavic2ProCameraImageCalibrateFilterDataSource.m; sourceTree = "<group>"; };
 		BE818BDD20F8CD5900DE4B4D /* DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIMavic2ZoomCameraImageCalibrateFilterDataSource.m; sourceTree = "<group>"; };
@@ -346,6 +346,7 @@
 		D7F5DFDF2008518B00C3185E /* DJIImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJIImageCache.h; sourceTree = "<group>"; };
 		D7F699F5201863D30023C693 /* DJIImageCalibrateColorConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJIImageCalibrateColorConverter.h; sourceTree = "<group>"; };
 		D7F699F6201863DD0023C693 /* DJIImageCalibrateColorConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJIImageCalibrateColorConverter.m; sourceTree = "<group>"; };
+		FE781EF62F9A1CB500F033FB /* FFmpeg.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FFmpeg.xcframework; path = FFmpeg/FFmpeg.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,9 +355,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C7E332E2111D7D700A2D60E /* Foundation.framework in Frameworks */,
+				FE781EF72F9A1CB500F033FB /* FFmpeg.xcframework in Frameworks */,
 				144D3F501FBEE0290027EF5D /* CoreGraphics.framework in Frameworks */,
 				144D3F4E1FBEDF210027EF5D /* CoreMedia.framework in Frameworks */,
-				1481D4562109DCC200609F3E /* FFmpeg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +729,7 @@
 		2E54A79A1F4C2F0D00916B4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE781EF62F9A1CB500F033FB /* FFmpeg.xcframework */,
 				1481D4552109DCC200609F3E /* FFmpeg.framework */,
 				9C7E332D2111D7D700A2D60E /* Foundation.framework */,
 				144D3F4F1FBEE0290027EF5D /* CoreGraphics.framework */,
@@ -1220,7 +1222,11 @@
 				INFOPLIST_FILE = DJIWidget/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DJIWidget/ThirdLib",
@@ -1266,7 +1272,11 @@
 				INFOPLIST_FILE = DJIWidget/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DJIWidget/ThirdLib",
@@ -1367,7 +1377,11 @@
 				INFOPLIST_FILE = DJIWidget/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DJIWidget/ThirdLib",
@@ -1468,7 +1482,11 @@
 				INFOPLIST_FILE = DJIWidget/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DJIWidget/ThirdLib",
