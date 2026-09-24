@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author       = { "DJI SDK" => "dev@dji.com" }
   s.source       = { :git => 'https://github.com/dji-sdk/DJIWidget.git', :tag => s.version.to_s, :submodules => true }
   s.requires_arc = true
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '15.0'
   s.source_files = 'DJIWidget/**/*.{h,m,c}'
   s.ios.public_header_files = 'DJIWidget/**/*.{h}'
   s.ios.vendored_frameworks = 'FFmpeg/FFmpeg.xcframework'
